@@ -1,0 +1,11 @@
+language: node_js
+node_js: 
+  - "stable"
+script: 
+  - echo 'BUILD STARTING'
+  - echo 'INSTALLING DEPENDENCIES'
+  - npm install
+  - npm run build 
+cache:
+  directories:
+    - "node_modules"
